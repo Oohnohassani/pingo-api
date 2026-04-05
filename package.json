@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "json-server data/places.json --port $PORT --host 0.0.0.0"
+    "start": "cross-env PORT=$PORT json-server data/places.json --port $PORT --host 0.0.0.0"
   },
   "dependencies": {
+    "cross-env": "^10.1.0",
     "json-server": "^1.0.0-beta.13"
   }
 }
